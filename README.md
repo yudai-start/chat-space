@@ -11,12 +11,12 @@
 |created_at|datetime|null: false|
 |updated_at|datetime|
 
-### Association1  
+### Association  
 
  has_many :groups, through: :groups_users  
  has_many :messages
 
-## groups_usersテーブル
+## groups_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -24,12 +24,12 @@
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
-### Association2  
+### Association  
 
  belongs_to :user  
  belongs_to :group
 
-## groupsテーブル
+## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -37,12 +37,12 @@
 |group_name|string|null: false|
 |created_at|datetime|null: false|
 
-### Association3  
+### Association  
 
  has_many :users, through: :groups_users  
  has_many :messages
 
-## messagesテーブル
+## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -53,7 +53,7 @@
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
-### Association4  
+### Association  
 
  belongs_to :user  
  belongs_to :group
