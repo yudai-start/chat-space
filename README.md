@@ -1,4 +1,4 @@
-# DB設計
+# DB設計
 
 ## usersテーブル
 
@@ -11,7 +11,7 @@
 |created_at|datetime|null: false|
 |updated_at|datetime|
 
-### Association  
+### Association1  
 
  has_many :groups, through: :groups_users  
  has_many :messages
@@ -24,7 +24,7 @@
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
-### Association  
+### Association2  
 
  belongs_to :user  
  belongs_to :group
@@ -37,7 +37,7 @@
 |group_name|string|null: false|
 |created_at|datetime|null: false|
 
-### Association  
+### Association3  
 
  has_many :users, through: :groups_users  
  has_many :messages
@@ -53,7 +53,7 @@
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
-### Association  
+### Association4  
 
  belongs_to :user  
  belongs_to :group
