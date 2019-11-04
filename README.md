@@ -37,7 +37,7 @@ Things you may want to cover:
 |updated_at|datetime|
 
 ### Association
-  has_many :groups, through: :groups_users
+  has_many :groups, through: :groups_users  
   has_many :messages
 
 ## groups_usersテーブル
@@ -50,7 +50,7 @@ Things you may want to cover:
 
 ### Association
 
-  belongs_to :user
+  belongs_to :user  
   belongs_to :group
 
 ## groupsテーブル
@@ -63,7 +63,7 @@ Things you may want to cover:
 
 ### Association
 
-  has_many :users, through: :groups_users
+  has_many :users, through: :groups_users  
   has_many :messages
 
 ## messagesテーブル
@@ -79,5 +79,5 @@ Things you may want to cover:
 
 ### Association
 
-  belongs_to :user
+  belongs_to :user  
   belongs_to :group
