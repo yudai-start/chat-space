@@ -1,0 +1,29 @@
+.main_chat
+  .main-chat-top
+    .chat-group
+      .chat-group__name
+        グループA
+      .chat-group__member
+        Member:
+    .group-editing
+      Edit
+
+  .chat-area
+    .post-box
+      .post-name-date
+        .post-name-date__name
+          TESTさん
+        .p.post-name-date__date
+          2019/11/6(水)07:13:46
+      .message
+        こんにちは！
+ 
+    .input-box
+      %label
+        %input{type: "text", placeholder:"  type a message", class: "input-box__text"}
+
+      %label
+        %i.far.fa-image{class: "input-box__icon"}
+        %input{type: "file", class: "input-box__image"}
+
+      %input{type: "submit", value:"Send", class: "input-box__btn"}
