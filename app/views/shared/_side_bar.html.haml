@@ -10,7 +10,7 @@
   .side-bar-bottom
     - current_user.groups.each do |group|
       .group-box
-        = link_to group_messages_path(group) do
+        = link_to "#" do
           .group-box__group-name
             = group.name
           .group-box__first-message

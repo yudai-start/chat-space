@@ -5,9 +5,8 @@
         グループA
       .chat-group__member
         Member:
-      .group-editing
-        =link_to edit_group_path(@group) do
-          Edit
+    =link_to edit_group_path(current_user), class: "group-editing" do
+      Edit
 
   .chat-area
     .post-box
