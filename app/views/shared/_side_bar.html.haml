@@ -1,0 +1,17 @@
+.side-bar
+  .side-bar-top
+    .user-name
+      = current_user.name
+    .btn-box
+      =link_to new_group_path, class: "btn-box__group-maiking" do
+        .i.fa.fa-edit
+      =link_to edit_user_path(current_user), class: "btn-box__user-setting" do
+        .i.fa.fa-cog
+  .side-bar-bottom
+    - current_user.groups.each do |group|
+      .group-box
+        = link_to "#" do
+          .group-box__group-name
+            = group.name
+          .group-box__first-message
+            メッセージはまだありません。
