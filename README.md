@@ -49,9 +49,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |id|integer|null: false|
-|message|text|
+|content|string|
 |image|string|
-|created_at|datetime|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 

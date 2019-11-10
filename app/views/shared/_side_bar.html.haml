@@ -10,8 +10,8 @@
   .side-bar-bottom
     - current_user.groups.each do |group|
       .group-box
-        = link_to "#" do
+        = link_to group_messages_path(group.id) do
           .group-box__group-name
             = group.name
-          .group-box__first-message
-            メッセージはまだありません。
+          .group-box__last-message
+            = group.show_last_message
