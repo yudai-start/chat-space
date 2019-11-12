@@ -6,7 +6,7 @@
       .chat-group__member
         Member:
         - @group.group_users.each do |group_user|
-          =@user= group_user.user.name
+          = group_user.user.name
     =link_to edit_group_path(@group.id), class: "group-editing" do
       Edit
 
