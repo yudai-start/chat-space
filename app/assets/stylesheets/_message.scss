@@ -94,6 +94,8 @@
 .messages{
   margin-left: 40px;
   margin-top: 26px;
+  overflow: scroll;
+  height: calc(100% - 100px);
   .message{
     padding: 20px 0;
     .upper-message{
