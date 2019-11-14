@@ -19,7 +19,7 @@ $(function() {
     return html;
   }
 
-  function buildNoimageHTML(message){
+  function buildNoImageHTML(message){
     let html = `<div class="message">
                   <div class="upper-message">
                     <div class="upper-message__user-name">
@@ -45,7 +45,6 @@ $(function() {
     $scrollAuto.animate({scrollTop: $scrollAuto[0].scrollHeight}, 'slow');
   }
 
-
   $("#new_message").on("submit", function(e){
     e.preventDefault();
     let formData = new FormData(this);
@@ -59,9 +58,9 @@ $(function() {
       processData: false,
       contentType: false
     })
+
     .done(function(message){
       if (message.image.url == null) {
-        console.log(message);
         let html = buildNoimageHTML(message);
         $(".messages").append(html);
         afterSubmit();
