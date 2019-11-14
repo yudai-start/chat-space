@@ -17,4 +17,7 @@
 .byebug_history
 
 /uploaders
-public/uploads
+
+
+/public/uploads
+
