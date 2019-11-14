@@ -61,7 +61,7 @@ $(function() {
 
     .done(function(message){
       if (message.image.url == null) {
-        let html = buildNoIImageHTML(message);
+        let html = buildNoImageHTML(message);
         $(".messages").append(html);
         afterSubmit();
         }
