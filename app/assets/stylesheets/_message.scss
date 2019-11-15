@@ -36,6 +36,7 @@
   height: calc(100vh - 100px);
   width: 300px;
   background-color: #2f3a51;
+  overflow: scroll;
   .group-box{
     padding: 20px;
     &__group-name{
