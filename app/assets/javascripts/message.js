@@ -2,16 +2,10 @@ $(function() {
 
   // メッセージ投稿機能（非同期通信）の追加用HTML
   function buildHTML(message){
-    if (message.content && message.image.url) {
-      var contentHtml = message.content
-      var imageHtml = message.image.url
-    } else if (message.content) {
-      var contentHtml = message.content
-      var imageHtml = ""
-    } else if (message.image.url){
-      var contentHtml = ""
-      var imageHtml = message.image.url
-    }
+    
+    var contentHtml = message.content ? message.content : '';
+    var imageHtml = message.image.url ? message.image.url : '';
+
     let html = `<div class="message" data-id = ${message.id}>
                   <div class="upper-message">
                     <div class="upper-message__user-name">
