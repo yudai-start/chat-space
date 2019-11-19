@@ -1,3 +1,4 @@
+require 'carrierwave/storage/abstract'
 require 'carrierwave/storage/file'
 require 'carrierwave/storage/fog'
 
@@ -11,6 +12,6 @@ CarrierWave.configure do |config|
     region: 'ap-northeast-1'
   }
 
-  config.fog_directory  = 'ここにバケット名を入れます'
+  config.fog_directory  = 'chat-space-image-region'
   config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/chat-space-image-region'
 end
